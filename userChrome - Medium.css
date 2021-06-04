@@ -35,7 +35,7 @@
 /* Navbar icons. */
 #nav-bar {
   --toolbarbutton-outer-padding: 3px !important; /* Padding of the icons. */
-  --toolbarbutton-inner-padding: 5px !important; /* Padding of the icons. */
+  --toolbarbutton-inner-padding: 6px !important; /* Padding of the icons. */
   /* --toolbar-start-end-padding: 4px !important; */ /* Navbar button edge padding */
 }
 

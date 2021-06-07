@@ -1,10 +1,10 @@
 /* Tabs. */
 #titlebar {
   --tab-min-height: 26px !important; /* Tab size. 26 Compact */
-  --proton-tab-block-margin: 3px !important; /* Padding above and below tabs. 2 Compact */ /* replace with --tab-block-margin after update. */
+  --proton-tab-block-margin: 2px !important; /* Padding above and below tabs. 2 Compact */ /* replace with --tab-block-margin after update. */
 }
 .tabbrowser-tab {
-  padding-inline: 1.5px !important; /* Padding between tabs. 1 Compact */
+  padding-inline: 1px !important; /* Padding between tabs. 1 Compact */
 }
 .tab-close-button {
   width: 22px !important; /* 22 Compact */
@@ -15,6 +15,7 @@
   font-size: .72em !important; /* Resizes the text under the tab title when there's audio playing. */
   margin-top: -1px !important;
   /* font-size: 0 !important; */ /* Uncomment to remove the text, but the audio icon won't display on the tab unless you hover your mouse over the tab area. */
+}
 
 /* URL bar. */
 #urlbar {
@@ -28,21 +29,29 @@
   --urlbar-container-height: 30.00px !important; /* Should be the same value as --urlbar-toolbar-height. */
 }
 /* Fixes size of box when you use a search shortcut and press escape. Uncomment if using above compact values. */
- #urlbar-search-mode-indicator {
+#urlbar-search-mode-indicator {
   margin-top: 1px !important;
   margin-bottom: 1px !important;
 }
+
+#identity-icon-box {
+  margin-left: 1px !important; /* Moves search icon 1 pixel to the right. */
+}
+
 /* Navbar icons. */
 #nav-bar {
+  --toolbar-start-end-padding: 6px !important; /* Navbar button edge padding */
   --toolbarbutton-outer-padding: 3px !important; /* Padding of the icons. */
-  --toolbarbutton-inner-padding: 6px !important; /* Padding of the icons. */
-  /* --toolbar-start-end-padding: 4px !important; */ /* Navbar button edge padding */
+  --toolbarbutton-inner-padding: 5px !important; /* Padding of the icons. */
 }
 
 /* Bookmarks bar. */
 #PersonalToolbar {
-  padding-inline: 2px !important; /* Padding from the edges. */
+  padding-inline: 4px !important; /* Padding from the edges. */
   --bookmark-block-padding: 1px !important; /* How big the bookmarks on the bar are. */
   /* margin-top: -1px !important; */
+  /* margin-bottom: -1px !important; */
 }
-
+#personal-bookmarks {
+  margin-block: -1px;
+}

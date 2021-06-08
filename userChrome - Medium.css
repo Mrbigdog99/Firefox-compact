@@ -6,6 +6,9 @@
 .tabbrowser-tab {
   padding-inline: 1.5px !important; /* Padding between tabs. 1 Compact */
 }
+#tabs-newtab-button {
+  /* padding-inline-start: 1px !important; */ /* Padding between tabs and new tab button. Uncomment for Compact */
+}
 .tab-close-button {
   width: 22px !important; /* 22 Compact */
   height: 22px !important; /* 22 Compact */

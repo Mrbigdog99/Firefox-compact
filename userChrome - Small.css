@@ -1,13 +1,13 @@
 /* Tabs. */
 #titlebar {
   --tab-min-height: 26px !important; /* Tab size. 26 Compact */
-  --proton-tab-block-margin: 2px !important; /* Padding above and below tabs. 2 Compact */ /* replace with --tab-block-margin after update. */
+  --proton-tab-block-margin: 3px !important; /* Padding above and below tabs. 2 Compact */ /* replace with --tab-block-margin after update. */
 }
 .tabbrowser-tab {
-  padding-inline: 1px !important; /* Padding between tabs. 1 Compact */
+  padding-inline: 1.5px !important; /* Padding between tabs. 1 Compact */
 }
 #tabs-newtab-button {
-  padding-inline-start: 1px !important; /* Padding between tabs and new tab button. Uncomment for Compact */
+  /* padding-inline-start: 1px !important; */ /* Padding between tabs and new tab button. Uncomment for Compact */
 }
 .tab-close-button {
   width: 22px !important; /* 22 Compact */
@@ -44,7 +44,7 @@
 /* Navbar icons. */
 #nav-bar {
   --toolbar-start-end-padding: 6px !important; /* Navbar button edge padding */
-  --toolbarbutton-outer-padding: 3px !important; /* Padding of the icons. */
+  --toolbarbutton-outer-padding: 5px !important; /* Padding of the icons. */
   --toolbarbutton-inner-padding: 5px !important; /* Padding of the icons. */
 }
 
@@ -56,7 +56,7 @@
   /* margin-bottom: -1px !important; */
 }
 #personal-bookmarks {
-  /* margin-block: -1px; */
+  /* margin-block: -1px; */ /* Reduces size of bookmark bar. Uncomment for Compact. */
 }
 
 /* Searchbar size fix */

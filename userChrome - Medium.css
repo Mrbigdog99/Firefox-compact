@@ -39,8 +39,8 @@
 /* Navbar icons. */
 #nav-bar {
   --toolbar-start-end-padding: 6px !important; /* Navbar button edge padding */
-  --toolbarbutton-outer-padding: 3px !important; /* Padding of the icons. */
-  --toolbarbutton-inner-padding: 5px !important; /* Padding of the icons. */
+  --toolbarbutton-outer-padding: 4px !important; /* Padding of the icons. */
+  --toolbarbutton-inner-padding: 6px !important; /* Padding of the icons. */
 }
 
 /* Bookmarks bar. */

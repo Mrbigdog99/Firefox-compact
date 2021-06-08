@@ -58,8 +58,8 @@
 
 /* Searchbar size fix */
 #search-container {
-  min-height: 24px !important; /* Both should be same as --urlbar-min-height */
-  height: 24px !important; /* Both should be same as --urlbar-min-height */
+  min-height: 24px !important; /* Should be same as --urlbar-min-height */
+  height: 24px !important; /* Should be same as --urlbar-min-height */
 }
 #search-container {
   padding-block: 3px !important;

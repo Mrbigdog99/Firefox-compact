@@ -1,0 +1,146 @@
+:root {
+  /* Tabs. */
+  --tab-min-height: 26px !important; /* Tab size. 26 Compact */
+  --tab-block-margin: 3px !important; /* Padding above and below tabs. 2 Compact */ /* replace with --tab-block-margin after update. */
+  
+  /* URL Bar */
+  --urlbar-height: 24.00px !important; /* 24 Compact */
+  --urlbar-toolbar-height: 30px !important; /* 30 Compact */
+  --urlbar-min-height: 24px !important; /* Should be the same value as --url-bar-height. */
+  --urlbar-icon-padding: 3px !important; /* Padding of the icons in the URL bar. */
+  --urlbar-container-padding: 0px !important; /* Padding of the icons in the URL bar. Set to 0 if using above compact values, or the bookmark star and other icons are to small. */
+  --urlbar-container-height: 30.00px !important; /* Should be the same value as --urlbar-toolbar-height. */
+
+ /* Navbar Icon */
+  --toolbar-start-end-padding: 6px !important; /* Navbar button edge padding */
+  --toolbarbutton-outer-padding: 4px !important; /* Padding of the icons. */
+  --toolbarbutton-inner-padding: 5px !important; /* Padding of the icons. */
+  
+ /* Bookmarks Toolbar */
+  --bookmark-block-padding: 1px !important; /* How big the bookmarks on the bar are. */
+  
+ /* Tab label masking */
+  --tab-label-mask-size: 1em !important;
+}
+
+/** Tabs. **/
+/* Tab padding */
+.tabbrowser-tab {
+  padding-inline: 1.5px !important; /* Padding between tabs. 1 Compact */
+}
+/* Tab close button size */
+.tab-close-button {
+  width: 22px !important; /* 22 Compact */
+  height: 22px !important; /* 22 Compact */
+  padding: 6px !important; /* 6 Compact */
+}
+/* Fixes size of box when you use a search shortcut and press escape. Uncomment if using above compact values. */
+#urlbar-search-mode-indicator {
+  margin-top: 1px !important;
+  margin-bottom: 1px !important;
+}
+/* Moves search icon 1 pixel to the right. */
+#identity-icon-box {
+  margin-left: 1px !important; 
+}
+
+/** Searchbar **/
+/* Fixes the size of the searchbar. */
+#search-container {
+  min-height: 24px !important; /* Should be same as --urlbar-min-height */
+  height: 24px !important; /* Should be same as --urlbar-min-height */
+}
+#search-container {
+  padding-block: 3px !important;
+}
+
+/** Bookmarks bar. **/
+#PersonalToolbar {
+  padding-inline: 4px !important; /* Padding from the edges. */
+}
+
+/** Tab lebel masking. **/
+/* Masking when hovering over the tab. */
+.tabbrowser-tab[visuallyselected=true]:hover,
+#tabbrowser-tabs:not([closebuttons=activetab]) > #tabbrowser-arrowscrollbox > .tabbrowser-tab:not([visuallyselected=true]):hover {
+  --tab-label-mask-size: 1em !important;
+}
+/* Amount of text that is displayed on the tab. */
+.tab-label-container:not([pinned]) {
+  margin-right: -3px !important;
+}
+/* Amount of text that is displayed on the tab when hovering over it. */
+.tabbrowser-tab:not([pinned]):hover .tab-label-container {
+  margin-right: 0px !important;
+}
+
+/*** Compact sound icon ***/
+/* Disables the text when audio is playing etc. */
+.tab-secondary-label:is([soundplaying], [muted], [activemedia-blocked], [pictureinpicture]) {
+  display: none !important;
+}
+/* Always show the favicon when sound is playing etc. */
+.tab-icon-stack:is([soundplaying], [muted], [activemedia-blocked], [pictureinpicture]) > :not(.tab-icon-overlay) {
+  opacity: 1 !important;
+}
+/** Positioning of the sound icon. **/
+.tab-icon-overlay:not([sharing], [crashed]):is([soundplaying], [muted], [activemedia-blocked], [pictureinpicture]) {
+  opacity: 1 !important;
+  inset-inline-end: -7px !important;
+  top: -5.5px !important;
+  z-index: 1 !important;
+  padding: 2px !important;
+  border-radius: 10px !important;
+  fill-opacity: 0.95 !important;
+}
+/*** Colors ***/
+/** Selected tab **/
+/* Not hovered */
+.tabbrowser-tab:is([selected]) .tab-icon-overlay:not([crashed], [sharing]) {
+  stroke: var(--lwt-selected-tab-background-color) !important;
+  background-color: transparent !important;
+}
+/* Hoverd */
+.tabbrowser-tab:is([selected]) .tab-icon-overlay:not([crashed], [sharing]):hover {
+  stroke: transparent !important;
+  background-color: var(--lwt-accent-color) !important;
+  fill-opacity: 1 !important;
+}
+
+/** Not selected tab **/
+/* Not hovered */
+.tabbrowser-tab:not([selected]) .tab-icon-overlay:not([crashed], [sharing]) {
+  stroke: var(--lwt-accent-color) !important;
+  background-color: transparent !important;
+}
+/* Hovered */
+.tabbrowser-tab:not([selected]):hover .tab-icon-overlay:not([crashed], [sharing]) {
+  stroke: #35343AFF !important;
+  background-color: transparent !important;
+}
+.tabbrowser-tab:not([selected]) .tab-icon-overlay:not([crashed], [sharing]):hover {
+  stroke: transparent !important;
+  background-color: var(--lwt-accent-color) !important;
+  fill-opacity: 1 !important;
+}
+
+/** Multiselected tabs **/
+/* Selected */
+.tabbrowser-tab:is([multiselected]):not([selected]) .tab-icon-overlay:not([crashed], [sharing]) {
+  stroke: #3E3D48FF !important;
+}
+/* Hovered */
+.tabbrowser-tab:is([multiselected]):not([selected]) .tab-icon-overlay:not([crashed], [sharing]):hover {
+  stroke: transparent !important;
+}
+
+/** Fallback when there's no favicon **/
+.tabbrowser-tab:not([image]) .tab-icon-overlay:not([pinned], [sharing], [crashed]) {
+  top: 0 !important;
+  inset-inline-end: 0 !important;
+  border-radius: 4px !important;
+  stroke: transparent !important;
+}
+.tabbrowser-tab:not([image]) .tab-icon-overlay:not([pinned], [sharing], [crashed]):hover {
+  fill-opacity: 1 !important;
+}

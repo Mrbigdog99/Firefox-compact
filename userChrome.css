@@ -80,7 +80,7 @@
 }
 
 .tab-label-container:not([pinned]) {
-  margin-right: -3px !important;
+  margin-right: -5px !important;
 }
 
 .tabbrowser-tab:not([pinned]):hover .tab-label-container {
@@ -143,6 +143,13 @@
 /* Hovered */
 .tabbrowser-tab:is([multiselected]):not([selected]) .tab-icon-overlay:not([crashed], [sharing]):hover {
   stroke: transparent !important;
+}
+/** Moving tab **/
+#tabbrowser-tabs:is([movingtab])
+.tab-icon-overlay:not([crashed], [sharing])
+ {
+  stroke: var(--toolbar-bgcolor) !important;
+  background-color: transparent !important;
 }
 
 /** Fallback when there's no favicon **/

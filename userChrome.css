@@ -104,7 +104,7 @@
   z-index: 1 !important;
   padding: 2px !important;
   border-radius: 10px !important;
-  fill-opacity: 0.95 !important;
+  fill-opacity: 1 !important;
 }
 /*** Colors ***/
 /** Selected tab **/
@@ -117,7 +117,6 @@
 .tabbrowser-tab:is([selected]) .tab-icon-overlay:not([crashed], [sharing]):hover {
   stroke: transparent !important;
   background-color: var(--lwt-accent-color) !important;
-  fill-opacity: 1 !important;
 }
 /** Not selected tab **/
 /* Not hover */
@@ -133,7 +132,6 @@
 .tabbrowser-tab:not([selected]) .tab-icon-overlay:not([crashed], [sharing]):hover {
   stroke: transparent !important;
   background-color: var(--lwt-accent-color) !important;
-  fill-opacity: 1 !important;
 }
 /** Multiselected tabs **/
 /* Selected */

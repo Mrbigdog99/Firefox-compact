@@ -1,7 +1,7 @@
 /* Tabs. */
 #titlebar {
   --tab-min-height: 26px !important; /* Tab size. 26 Compact */
-  --tab-block-margin: 3px !important; /* Padding above and below tabs. 2 Compact */ /* replace with --tab-block-margin after update. */
+  --proton-tab-block-margin: 3px !important; /* Padding above and below tabs. 2 Compact */ /* replace with --tab-block-margin after update. */
 }
 .tabbrowser-tab {
   padding-inline: 1.5px !important; /* Padding between tabs. 1 Compact */

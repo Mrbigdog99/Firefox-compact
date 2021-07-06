@@ -7,3 +7,5 @@ Make sure that you are using "Normal" density, not "Compact (not supported)".
 Known bugs: 
 
 When you press alt the min, max, close buttons don't look right. I don't know how to fix this. 
+
+Moving the page zoom buttons onto the toolbar, etc. is not sized correctly.

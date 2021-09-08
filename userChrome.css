@@ -1,3 +1,10 @@
+/* Menus */
+:root {
+  --arrowpanel-menuitem-margin: 0px 5px !important;
+  --arrowpanel-menuitem-padding-block: 6px !important;
+  --panel-subview-body-padding: 5px 0 !important;
+}
+
 /* Tabs. */
 #titlebar {
   --tab-min-height: 26px !important; /* Tab size. 26 Compact */

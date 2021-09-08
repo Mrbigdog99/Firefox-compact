@@ -1,9 +1,8 @@
 /* Menus */
 :root {
-  --arrowpanel-menuitem-margin: 0px 5px !important; /* Left and right */
-  --arrowpanel-menuitem-padding-block: 3px 6px !important; /* remove 6px after Firefox update */
-  /* --arrowpanel-menuitem-padding-inline: 6px !important; Uncomment after Firefox update */
-  --panel-subview-body-padding: 5px 0 !important; /* Top and bottom */
+  --arrowpanel-menuitem-margin: 0px 6px !important; /* Left and right */
+  --arrowpanel-menuitem-padding-block: 6px 8px !important; /* remove 8px after Firefox update */
+  --panel-subview-body-padding: 6px 0 !important; /* Top and bottom */
 }
 
 /* Tabs. */

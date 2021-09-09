@@ -17,9 +17,9 @@
   /* padding-inline-start: 1px !important; */ /* Padding between tabs and new tab button. Uncomment for Compact */
 }
 .tab-close-button {
-  width: 22px !important; /* 22 Compact */
-  height: 22px !important; /* 22 Compact */
-  padding: 6px !important; /* 6 Compact */
+  width: 20px !important; /* 22 Normal */
+  height: 20px !important; /* 22 Normal */
+  padding: 5px !important; /* 6 Normal */
 }
 
 /* .tab-secondary-label */ {
